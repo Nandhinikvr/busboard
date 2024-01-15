@@ -1,12 +1,11 @@
 function fizzbuzz(){
     console.log(" welcome to fizzbuzz ")
     let three= "Fizz",five="buzz",seven="bang",eleven="bong",thirteen="fezz";
-    let i=6;
-    let condition = 'three';
+    for (let i=1;i<=256;i++)
     {
         let result=[];
         let elevenmultiple = false;
-        if ( i%3 == 0 && condition == "three"){
+        if ( i%3 == 0){
             result.push(three);
         }
         if(i%13 ==0){
