@@ -1,6 +1,5 @@
 function fizzbuzz(){
-
-    console.log(" welcome o fizzbuzz ")
+    console.log(" welcome to fizzbuzz ")
     for (let i=1;i<=100;i++)
     {
         if(i%3 ==0 && i%5 ==0)
@@ -12,7 +11,5 @@ function fizzbuzz(){
         else 
              console.log(i)
     }
-
 }
-
 fizzbuzz();
