@@ -1,5 +1,4 @@
 function fizzbuzz(){
-    console.log(" welcome to fizzbuzz ")
     let three= "Fizz",five="buzz",seven="bang",eleven="bong",thirteen="fezz";
     for (let i=1;i<=256;i++)
     {
@@ -25,18 +24,15 @@ function fizzbuzz(){
             else{
                 result = [];
                 result.push(eleven);
-            }
-           
+            }           
         }
         if (i%17 == 0){
             result =result.reverse();
-        }
-           
+        }           
         if (result == "")
         console.log(i)
     else
         console.log(result.join(''))
-    }
-    
+    }    
 }
 fizzbuzz();
