@@ -1,3 +1,4 @@
+
 class Bot {
     makeMove(gamestate) {
         let result='R';
