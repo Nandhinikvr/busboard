@@ -1,6 +1,6 @@
 class Bot {
     makeMove(gamestate) {
-        let result='R';
+        let result='';
         let previousP1States =[]
         let previousP2States =[]
         let previousRCount = 0
@@ -11,7 +11,7 @@ class Bot {
         let Dcount = 0
 
         if (gamestate.rounds.length == 0)
-            result = 'R'
+            result = 'D'
         else{
             for (let i = 0; i<gamestate.rounds.length;i++){
                 previousP2States.push(gamestate.rounds[i]['p2'])
