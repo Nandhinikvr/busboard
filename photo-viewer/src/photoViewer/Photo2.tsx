@@ -1,14 +1,5 @@
-import React from "react"; // import React (to provide access to TSX)
-import './photoViewer.css' // importing css file
 
-export function Photo2() {    // declare and export new function called 'PhotoViewer'
-    
-    return (                
-        <div>    
-            <p className="paraText2"> Sample Test</p>             
-        </div>
-    );
-}
+import './photoViewer.css' // importing css file
 
 const brokenImages = [
     1, 24, 32, 36, 44, 47
