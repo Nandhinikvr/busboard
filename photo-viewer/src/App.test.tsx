@@ -14,16 +14,13 @@ describe("My Component", () => {
 
         expect(textElement).toBeInTheDocument();
     })
-    test('if generates correct image URL', () => {
-        console.log(render(<App />))
-        // const urls = getImageUrls();
-        // expect(urls[0]).toEqual('https://picsum.photos/id/601/200/300');
-        // // const { getByAltText }=render(<App />);
-        //        expect(getByAltText).
-
-        
-        
-    })
-
-
+    test('verify broken image is not present in the Url', () => {
+        const {getByAltText}=(render(<App />))
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/601/1600/900.jpg")
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/624/1600/900.jpg")
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/632/1600/900.jpg")
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/636/1600/900.jpg")
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/644/1600/900.jpg")   
+        expect(getByAltText).not.toContainEqual("https://picsum.photos/id/647/1600/900.jpg")
+   })
 })
