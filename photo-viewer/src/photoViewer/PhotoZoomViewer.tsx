@@ -4,7 +4,7 @@ export function PhotoZoomViewer(props: { imageurl: string }) {    // declare and
 
     return (        
                 
-         <img className="zoomedImage" src={props.imageurl} alt="Default image"></img>
+         <img className="zoomedImage" src={props.imageurl} alt={props.imageurl}></img>
             
         );
 }
